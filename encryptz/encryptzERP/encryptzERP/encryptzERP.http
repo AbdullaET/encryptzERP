@@ -1,6 +1,0 @@
-@encryptzERP_HostAddress = http://localhost:5286
-
-GET {{encryptzERP_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
