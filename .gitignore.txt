@@ -1,0 +1,19 @@
+# Ignore bin and obj folders
+/CoreModule/API/encrypzERP.BL/bin/
+/CoreModule/API/encrypzERP.BL/obj/
+
+/CoreModule/API/.vs
+
+/CoreModule/API/packages
+*.user
+/CoreModule/UI/package-lock.json
+
+*.suo
+/.vs
+
+
+
+
+
+
+

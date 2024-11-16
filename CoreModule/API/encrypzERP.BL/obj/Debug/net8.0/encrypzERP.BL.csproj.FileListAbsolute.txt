@@ -24,3 +24,16 @@ D:\Abdu\encryptz\ERP\CoreModule\API\CoreModule\API\encrypzERP.BL\obj\Debug\net8.
 D:\Abdu\encryptz\ERP\CoreModule\API\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\refint\encrypzERP.BL.dll
 D:\Abdu\encryptz\ERP\CoreModule\API\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.pdb
 D:\Abdu\encryptz\ERP\CoreModule\API\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\ref\encrypzERP.BL.dll
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\bin\Debug\net8.0\encrypzERP.BL.deps.json
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\bin\Debug\net8.0\encrypzERP.BL.dll
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\bin\Debug\net8.0\encrypzERP.BL.pdb
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.csproj.AssemblyReference.cache
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.AssemblyInfoInputs.cache
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.AssemblyInfo.cs
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.csproj.CoreCompileInputs.cache
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.sourcelink.json
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.dll
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\refint\encrypzERP.BL.dll
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\encrypzERP.BL.pdb
+D:\Abdu\encryptz\encryptzERP\CoreModule\API\encrypzERP.BL\obj\Debug\net8.0\ref\encrypzERP.BL.dll

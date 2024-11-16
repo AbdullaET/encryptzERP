@@ -1,12 +1,102 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\dbcontexts\\coredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\dbcontexts\\coredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encryptzerp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|solutionrelative:encryptzerp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\srvusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\services\\users\\srvusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\models\\musers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\models\\musers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\services\\users\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
+              "RelativeDocumentMoniker": "encryptzERP\\appsettings.json",
+              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
+              "RelativeToolTip": "encryptzERP\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-09T05:52:20.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "coreDBContext.cs",
+              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "RelativeDocumentMoniker": "encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "RelativeToolTip": "encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwBgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:19:12.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mUsers.cs",
+              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
+              "RelativeDocumentMoniker": "encrypzERP.BL\\Models\\mUsers.cs",
+              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
+              "RelativeToolTip": "encrypzERP.BL\\Models\\mUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:18:49.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "srvUsers.cs",
+              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "RelativeDocumentMoniker": "encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "RelativeToolTip": "encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:18:45.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Iusers.cs",
+              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "RelativeDocumentMoniker": "encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "RelativeToolTip": "encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T11:18:42.092Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

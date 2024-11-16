@@ -1696,11 +1696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\encryptzERP\\encryptzERP.csproj",
+      "projectUniqueName": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\encryptzERP.csproj",
       "projectName": "encryptzERP",
-      "projectPath": "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\encryptzERP\\encryptzERP.csproj",
+      "projectPath": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\encryptzERP.csproj",
       "packagesPath": "C:\\Users\\yashi\\.nuget\\packages\\",
-      "outputPath": "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\encryptzERP\\obj\\",
+      "outputPath": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yashi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1718,8 +1718,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj": {
-              "projectPath": "D:\\Abdu\\encryptz\\ERP\\CoreModule\\API\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj"
+            "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj": {
+              "projectPath": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj"
             }
           }
         }
