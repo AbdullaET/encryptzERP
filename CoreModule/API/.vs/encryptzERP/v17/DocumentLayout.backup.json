@@ -1,25 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\",
+  "WorkspaceRootPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\dbcontexts\\coredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32D64C31-D68E-415D-B680-670A3EA136AC}|Infrastructure\\Infrastructure.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\infrastructure\\exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32D64C31-D68E-415D-B680-670A3EA136AC}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13163452-FF97-4333-9E30-FC64EEDF6FD4}|Shared\\Shared.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13163452-FF97-4333-9E30-FC64EEDF6FD4}|Shared\\Shared.csproj|solutionrelative:shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encryptzerp\\controllers\\admin\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|solutionrelative:encryptzerp\\controllers\\admin\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\dbcontexts\\coredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\dbcontexts\\coredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encryptzerp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{B3922519-1DC2-45CE-9D72-EEAF23C4ACF5}|Data\\Data.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3922519-1DC2-45CE-9D72-EEAF23C4ACF5}|Data\\Data.csproj|solutionrelative:data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{766A834D-0C36-4BF5-BC7B-52379647AB70}|Entities\\Entities.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{766A834D-0C36-4BF5-BC7B-52379647AB70}|Entities\\Entities.csproj|solutionrelative:entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E1F653-429E-474C-9B0F-AC5A572336EB}|Business\\Business.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E1F653-429E-474C-9B0F-AC5A572336EB}|Business\\Business.csproj|solutionrelative:business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\encrypzerp.bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\encrypzerp.bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encryptzerp\\encryptzerp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|solutionrelative:encryptzerp\\encryptzerp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encryptzerp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B70E4108-4CD9-4DBE-B8CC-B5D426935B4F}|encryptzERP\\encryptzERP.csproj|solutionrelative:encryptzerp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\srvusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\srvusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\services\\users\\srvusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\models\\musers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\models\\musers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\models\\musers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|d:\\abdu\\encryptz\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|c:\\abdu\\project\\encryptzerp\\coremodule\\api\\encrypzerp.bl\\services\\users\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F737CDCB-A357-4CA9-B019-71786602734E}|encrypzERP.BL\\encrypzERP.BL.csproj|solutionrelative:encrypzerp.bl\\services\\users\\iusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,41 +62,145 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "userController.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\Controllers\\Admin\\userController.cs",
+              "RelativeDocumentMoniker": "encryptzERP\\Controllers\\Admin\\userController.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\Controllers\\Admin\\userController.cs",
+              "RelativeToolTip": "encryptzERP\\Controllers\\Admin\\userController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:59:05.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Shared\\Class1.cs",
+              "RelativeDocumentMoniker": "Shared\\Class1.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Shared\\Class1.cs",
+              "RelativeToolTip": "Shared\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:58:08.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "exception.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Infrastructure\\exception.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\exception.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Infrastructure\\exception.cs",
+              "RelativeToolTip": "Infrastructure\\exception.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:57:54.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Class1.cs",
+              "RelativeDocumentMoniker": "Data\\Class1.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Class1.cs",
+              "RelativeToolTip": "Data\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:10:13.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Entities\\Class1.cs",
+              "RelativeDocumentMoniker": "Entities\\Class1.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Entities\\Class1.cs",
+              "RelativeToolTip": "Entities\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:09:43.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\Class1.cs",
+              "RelativeDocumentMoniker": "Business\\Class1.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\Class1.cs",
+              "RelativeToolTip": "Business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T15:08:58.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "encrypzERP.BL",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj",
+              "RelativeDocumentMoniker": "encrypzERP.BL\\encrypzERP.BL.csproj",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\encrypzERP.BL.csproj",
+              "RelativeToolTip": "encrypzERP.BL\\encrypzERP.BL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-29T15:05:58.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "encryptzERP.http",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\encryptzERP.http",
+              "RelativeDocumentMoniker": "encryptzERP\\encryptzERP.http",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\encryptzERP.http",
+              "RelativeToolTip": "encryptzERP\\encryptzERP.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-29T15:02:22.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
               "RelativeDocumentMoniker": "encryptzERP\\appsettings.json",
-              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\appsettings.json",
               "RelativeToolTip": "encryptzERP\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-09T05:52:20.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "coreDBContext.cs",
-              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
               "RelativeDocumentMoniker": "encrypzERP.BL\\dbContexts\\coreDBContext.cs",
-              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\dbContexts\\coreDBContext.cs",
               "RelativeToolTip": "encrypzERP.BL\\dbContexts\\coreDBContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwBgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T11:19:12.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "mUsers.cs",
-              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
               "RelativeDocumentMoniker": "encrypzERP.BL\\Models\\mUsers.cs",
-              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Models\\mUsers.cs",
               "RelativeToolTip": "encrypzERP.BL\\Models\\mUsers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -72,11 +208,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "srvUsers.cs",
-              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
               "RelativeDocumentMoniker": "encrypzERP.BL\\Services\\users\\srvUsers.cs",
-              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\srvUsers.cs",
               "RelativeToolTip": "encrypzERP.BL\\Services\\users\\srvUsers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,11 +220,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Iusers.cs",
-              "DocumentMoniker": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "DocumentMoniker": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
               "RelativeDocumentMoniker": "encrypzERP.BL\\Services\\users\\Iusers.cs",
-              "ToolTip": "D:\\Abdu\\encryptz\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
+              "ToolTip": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encrypzERP.BL\\Services\\users\\Iusers.cs",
               "RelativeToolTip": "encrypzERP.BL\\Services\\users\\Iusers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

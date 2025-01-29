@@ -7,7 +7,7 @@
 /CoreModule/API/packages
 *.user
 /CoreModule/UI/package-lock.json
-
+/CoreModule/UI/node_modules
 *.suo
 /.vs
 

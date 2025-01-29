@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "encryptzERP.Controllers.userController",
+    "ContainingType": "encryptzERP.Controllers.Admin.userController",
     "Method": "GetUsers",
     "RelativePath": "api/user",
     "HttpMethod": "GET",

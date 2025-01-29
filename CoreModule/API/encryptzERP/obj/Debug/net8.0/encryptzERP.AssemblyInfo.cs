@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("encryptzERP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f73b7e8254fcd842abc6a4744b6955304e102462")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8a66987034b6c62fa642522043fc1ab7c4ef351")]
 [assembly: System.Reflection.AssemblyProductAttribute("encryptzERP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("encryptzERP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

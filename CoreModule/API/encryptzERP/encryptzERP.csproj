@@ -15,4 +15,8 @@
     <ProjectReference Include="..\encrypzERP.BL\encrypzERP.BL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Accounts\" />
+  </ItemGroup>
+
 </Project>
