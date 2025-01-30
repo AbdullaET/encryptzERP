@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\Business.csproj",
-      "projectName": "Business",
-      "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\BusinessLogic.csproj",
+      "projectName": "BusinessLogic",
+      "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\Abdu\\.nuget\\packages\\",
       "outputPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\obj\\",
       "projectStyle": "PackageReference",

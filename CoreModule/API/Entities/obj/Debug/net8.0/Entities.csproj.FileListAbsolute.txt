@@ -1,0 +1,12 @@
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\bin\Debug\net8.0\Entities.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Abdu\Project\encryptzERP\CoreModule\API\Entities\obj\Debug\net8.0\ref\Entities.dll

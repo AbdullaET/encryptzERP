@@ -1,0 +1,12 @@
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\bin\Debug\net8.0\BusinessLogic.deps.json
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\bin\Debug\net8.0\BusinessLogic.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\bin\Debug\net8.0\BusinessLogic.pdb
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.AssemblyInfoInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.AssemblyInfo.cs
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.sourcelink.json
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\refint\BusinessLogic.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\BusinessLogic.pdb
+C:\Abdu\Project\encryptzERP\CoreModule\API\Business\obj\Debug\net8.0\ref\BusinessLogic.dll
