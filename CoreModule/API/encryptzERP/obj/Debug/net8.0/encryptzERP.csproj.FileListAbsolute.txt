@@ -157,14 +157,6 @@ D:\Abdu\encryptz\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\refint\
 D:\Abdu\encryptz\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.pdb
 D:\Abdu\encryptz\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.genruntimeconfig.cache
 D:\Abdu\encryptz\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\ref\encryptzERP.dll
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.csproj.AssemblyReference.cache
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.GeneratedMSBuildEditorConfig.editorconfig
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.AssemblyInfoInputs.cache
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.AssemblyInfo.cs
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.csproj.CoreCompileInputs.cache
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.MvcApplicationPartsAssemblyInfo.cs
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.MvcApplicationPartsAssemblyInfo.cache
-C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.sourcelink.json
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\appsettings.Development.json
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\appsettings.json
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\encryptzERP.staticwebassets.runtime.json
@@ -176,6 +168,7 @@ C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\encryptz
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\encryptzERP.pdb
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Azure.Core.dll
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Azure.Identity.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -246,6 +239,14 @@ C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Entities
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Infrastructure.pdb
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Repository.pdb
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\Shared.pdb
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.csproj.AssemblyReference.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.AssemblyInfoInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.AssemblyInfo.cs
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.csproj.CoreCompileInputs.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.MvcApplicationPartsAssemblyInfo.cs
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.MvcApplicationPartsAssemblyInfo.cache
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.sourcelink.json
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\scopedcss\bundle\encryptzERP.styles.css
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\staticwebassets.build.json
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\staticwebassets.development.json

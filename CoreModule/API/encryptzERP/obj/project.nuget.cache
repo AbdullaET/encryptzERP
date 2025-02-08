@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "a+e+4ThPB1c=",
+  "dgSpecHash": "+eqzswq/HNM=",
   "success": true,
   "projectFilePath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\encryptzERP\\encryptzERP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Abdu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Abdu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.11\\microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",
     "C:\\Users\\Abdu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.10\\microsoft.aspnetcore.cryptography.internal.8.0.10.nupkg.sha512",
     "C:\\Users\\Abdu\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.10\\microsoft.aspnetcore.cryptography.keyderivation.8.0.10.nupkg.sha512",
     "C:\\Users\\Abdu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.10\\microsoft.aspnetcore.identity.ui.8.0.10.nupkg.sha512",

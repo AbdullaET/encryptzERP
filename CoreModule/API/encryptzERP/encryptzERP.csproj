@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Accounts\" />
-    <Folder Include="Controllers\Admin\" />
   </ItemGroup>
 
   <ItemGroup>

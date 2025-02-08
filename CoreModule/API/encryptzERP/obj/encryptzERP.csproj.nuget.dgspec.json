@@ -31,7 +31,17 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Infrastructure\\Infrastructure.csproj"
+              },
+              "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Repository\\Repository.csproj"
+              },
+              "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Shared\\Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -333,7 +343,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Data.csproj": {
+                "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -351,6 +365,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -399,9 +419,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\BusinessLogic.csproj": {
-                "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Business\\BusinessLogic.csproj"
-              },
               "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Data.csproj": {
                 "projectPath": "C:\\Abdu\\Project\\encryptzERP\\CoreModule\\API\\Data\\Data.csproj"
               },
