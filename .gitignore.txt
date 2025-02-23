@@ -8,6 +8,8 @@
 *.user
 /CoreModule/UI/package-lock.json
 /CoreModule/UI/node_modules
+/CoreModule/UI/Admin/encryptz.Admin/node_modules
+/CoreModule/UI/EstimateBilling/node_modules
 *.suo
 /.vs
 /.vs/
