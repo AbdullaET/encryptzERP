@@ -1,49 +1,35 @@
-﻿using System.Net;
-using System.Net.Mail;
-//using Microsoft.Extensions.Configuration;
+﻿using MailKit.Net.Smtp;
+using MimeKit;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Threading.Tasks;
 
-namespace encrypzERP.BL.Services
+public class EmailService
 {
-    
+    private readonly IConfiguration _configuration;
 
-    public class emailService
+    public EmailService(IConfiguration configuration)
     {
-        //private readonly IConfiguration _configuration;
-
-        //public emailService(IConfiguration configuration)
-        //{
-        //    _configuration = configuration;
-        //}
-
-        public async Task SendOtpEmailAsync(string recipientEmail, string subject, string message)
-        {
-            //var emailSettings = _configuration.GetSection("EmailSettings");
-
-            //var smtpServer = emailSettings["SmtpServer"];
-            //var port = int.Parse(emailSettings["Port"]);
-            //var senderEmail = emailSettings["SenderEmail"];
-            //var senderPassword = emailSettings["SenderPassword"];
-
-            //var smtpClient = new SmtpClient(smtpServer)
-            //{
-            //    Port = port,
-            //    Credentials = new NetworkCredential(senderEmail, senderPassword),
-            //    EnableSsl = true
-            //};
-
-            //var mailMessage = new MailMessage
-            //{
-            //    From = new MailAddress(senderEmail),
-            //    Subject = subject,
-            //    Body = message,
-            //    IsBodyHtml = true
-            //};
-
-            //mailMessage.To.Add(recipientEmail);
-
-            //await smtpClient.SendMailAsync(mailMessage);
-        }
+        _configuration = configuration;
     }
 
+    public async Task SendEmail(string toEmail, string otp)
+    {
+        var smtpSettings = _configuration.GetSection("SmtpSettings");
+
+        var email = new MimeMessage();
+        email.From.Add(new MailboxAddress("ERP System", smtpSettings["FromEmail"]));
+        email.To.Add(new MailboxAddress("", toEmail));
+        email.Subject = "Your OTP Code";
+        email.Body = new TextPart("plain")
+        {
+            Text = $"Your OTP Code is: {otp}. It is valid for 5 minutes."
+        };
+
+        using var smtp = new SmtpClient();
+        await smtp.ConnectAsync(smtpSettings["Host"], int.Parse(smtpSettings["Port"]), bool.Parse(smtpSettings["EnableSSL"]));
+        await smtp.AuthenticateAsync(smtpSettings["Username"], smtpSettings["Password"]);
+        await smtp.SendAsync(email);
+        await smtp.DisconnectAsync(true);
+    }
 }

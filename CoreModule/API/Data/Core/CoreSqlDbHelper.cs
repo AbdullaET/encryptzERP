@@ -47,6 +47,20 @@ namespace Data.Core
             }
         }
 
+        public async Task<int> ExecuteNonQueryAsync(string query, SqlParameter[] parameters = null)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(query, connection))
+            {
+                command.CommandType = CommandType.Text;
+                if (parameters != null)
+                    command.Parameters.AddRange(parameters);
+
+                connection.Open();
+                return await command.ExecuteNonQueryAsync();
+            }
+        }
+
     }
 
     

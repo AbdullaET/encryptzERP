@@ -20,8 +20,21 @@ namespace BusinessLogic.Core.DTOs
 
     public class RefreshTokenRequest
     {
-        public string UserId { get; set; }
-        public string RefreshToken { get; set; }
+        public string UserId { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
+    }
+
+    public class SendOtpRequest
+    {
+        public string Email { get; set; } = string.Empty;
+        public string phoneNo { get; set; } = string.Empty;
+        public string panNo { get; set; }= string.Empty;
+    }
+
+    public class VerifyOtpRequest
+    {
+        public int UserId { get; set; }
+        public string OTP { get; set; } = string.Empty;
     }
 
 

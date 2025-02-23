@@ -264,3 +264,6 @@ C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\refint\e
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.pdb
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\encryptzERP.genruntimeconfig.cache
 C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\obj\Debug\net8.0\ref\encryptzERP.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\MailKit.dll
+C:\Abdu\Project\encryptzERP\CoreModule\API\encryptzERP\bin\Debug\net8.0\MimeKit.dll

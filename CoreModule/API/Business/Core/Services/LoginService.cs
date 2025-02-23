@@ -58,10 +58,11 @@ namespace BusinessLogic.Core.Services
             }
         }
 
-       public async Task<bool> LogoutAsync(int userId)
+       public async Task<bool> LogoutAsync(string userId)
         {
             try
             {
+                _refreshTokens.Remove(userId);
                 return true;
             }
             catch (Exception)
@@ -79,7 +80,14 @@ namespace BusinessLogic.Core.Services
                 if (_refreshTokens.TryGetValue(request.UserId, out var savedRefreshToken) &&
                 savedRefreshToken == request.RefreshToken)
                 {
-                    loginResponse.Token = _tokenService.GenerateAccessToken(request.UserId, "Admin");
+                    if (request.UserId == "admin")
+                    {
+                        loginResponse.Token = _tokenService.GenerateAccessToken(request.UserId, "Admin");
+                    }
+                    else
+                    {
+                        loginResponse.Token = _tokenService.GenerateAccessToken(request.UserId, "User");
+                    }
                     loginResponse.RefreshToken = _tokenService.GenerateRefreshToken();
 
                     // Update refresh token
@@ -95,6 +103,24 @@ namespace BusinessLogic.Core.Services
             }
         }
 
+        Task<bool> ILoginService.SaveOTP(int userId, string otp)
+        {
+            throw new NotImplementedException();
+        }
 
+        Task<bool> ILoginService.VerifyOTP(int userId, string otp)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> ILoginService.ChangePassword(int userId, string newPassword)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<int?> ILoginService.GetUserIdByEmail(string email)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
