@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 using Data.Core;
 using Entities.Admin;
 using Entities.Core;
+using Infrastructure.Extensions;
 using Microsoft.Data.SqlClient;
 using Repository.Admin.Interface;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Repository.Admin
 {
@@ -20,14 +22,19 @@ namespace Repository.Admin
         {
             _sqlHelper = sqlHelper;
         }
-        public async Task AddAsync(User user)
+        public async Task<User> AddAsync(User user)
         {
-            var query = @"Insert Into core.userM( userId, userName, userPassword, panNo, adharCardNo, phoneNo, address, stateId, nationId, isActive,, )
-                            Values(  @userId, @userName, @userPassword, @panNo, @adharCardNo, @phoneNo, @address, @stateId, @nationId, @isActive )";
+            DataTable data = new DataTable();
+            var query = @"Insert Into core.userM( userId, userName, userPassword, panNo, adharCardNo, phoneNo, address, stateId, nationId, isActive )
+                            Values(  @userId, @userName, @userPassword, @panNo, @adharCardNo, @phoneNo, @address, @stateId, @nationId, @isActive );
+                             select * from core.userM where userId=@userId;";
 
             var parameters = GetSqlParameters(user);
-            _sqlHelper.ExecuteNonQuery(query, parameters);
-            await Task.CompletedTask;
+            data = await _sqlHelper.ExecuteQueryAsync(query, parameters);
+            if (data.Rows.Count == 0) return null;
+            user = data.Rows[0].ToObjectFromDR<User>();
+            return user;
+
         }
         public async Task DeleteAsync(long id)
         {
@@ -42,10 +49,12 @@ namespace Repository.Admin
             var dataTable = _sqlHelper.ExecuteQuery(query);
             var users = new List<User>();
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                users.Add(MapDataRowToUser(row));
-            }
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    users.Add(MapDataRowToUser(row));
+            //}
+
+            users = dataTable.ToList<User>();
 
             return await Task.FromResult(users);
         }
@@ -57,10 +66,11 @@ namespace Repository.Admin
 
             if (dataTable.Rows.Count == 0) return null;
 
-            return await Task.FromResult(MapDataRowToUser(dataTable.Rows[0]));
+            return await Task.FromResult(dataTable.Rows[0].ToObjectFromDR<User>());
         }
-        public async Task UpdateAsync(User user)
+        public async Task<User> UpdateAsync(User user)
         {
+            DataTable data = new DataTable();
             var query = @"Update core.userM set 
                               userId = @userId
                             , userName = @userName
@@ -72,12 +82,17 @@ namespace Repository.Admin
                             , stateId = @stateId
                             , nationId = @nationId
                             , isActive = @isActive
-                            WHERE id = @id";
+                            WHERE id = @id;
+                        select * from core.UserM where id=@id";
 
             var parameters = GetSqlParameters(user);
-            _sqlHelper.ExecuteNonQuery(query, parameters);
-            await Task.CompletedTask;
+             data= await _sqlHelper.ExecuteQueryAsync(query, parameters);
+            if (data.Rows.Count == 0) return null;
+            user = data.Rows[0].ToObjectFromDR<User>();
+            return user;
         }
+
+        
 
 
         private static User MapDataRowToUser(DataRow row)

@@ -66,8 +66,8 @@ namespace encryptzERP.Controllers.Admin
         {
             try
             {
-                var success = await _UserService.AddUserAsync(UserDto);
-                if (!success)
+                var response = await _UserService.AddUserAsync(UserDto);
+                if (response == null)
                     return BadRequest("Failed to add business.");
 
                 return Ok(new { message = "Business added successfully." });

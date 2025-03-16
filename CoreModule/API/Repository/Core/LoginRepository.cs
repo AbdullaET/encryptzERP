@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using Azure.Core;
 using Data.Core;
 using Entities.Admin;
+using Infrastructure.Extensions;
 using Microsoft.Data.SqlClient;
 using Repository.Core.Interface;
 
@@ -34,7 +36,7 @@ namespace Repository.Core
 
                 if (dataTable.Rows.Count == 0) return Task.FromResult(user);
 
-                user = MapDataRowToUser(dataTable.Rows[0]);
+                user = dataTable.Rows[0].ToObjectFromDR<User>();
                 return Task.FromResult(user);
 
             }
@@ -65,15 +67,18 @@ namespace Repository.Core
         }
 
         // Generate and store OTP in database
-        public async Task<bool> SaveOTP(int userId, string otp)
+        public async Task<bool> SaveOTP(string loginType, string loginId, string otp, string fullName)
         {
             try
             {
-                string query = "INSERT INTO UserOTP (UserId, OTP, Expiry, IsUsed) VALUES (@UserId, @OTP, @Expiry, 0)";
+                string query = "INSERT INTO core.loginOTP (LoginType, LoginId, FullName, OTP, ExpiryTime, IsUsed, EntryTime) VALUES (@LoginType, @LoginId, @FullName, @OTP, @ExpiryTime, 0, @EntryTime)";
                 var parameters = new[] {
-                    new SqlParameter("@UserId", userId),
+                    new SqlParameter("@LoginType", loginType),
+                    new SqlParameter("@LoginId", loginId),
+                    new SqlParameter("@FullName", fullName),
                     new SqlParameter("@OTP", otp),
-                    new SqlParameter("@Expiry", DateTime.UtcNow.AddMinutes(5))
+                    new SqlParameter("@ExpiryTime", DateTime.UtcNow.AddMinutes(5)),
+                    new SqlParameter("@EntryTime",DateTime.UtcNow)
                  };
 
                 int rows = await _sqlHelper.ExecuteNonQueryAsync(query, parameters);
@@ -105,27 +110,29 @@ namespace Repository.Core
         }
 
         // Verify OTP
-        public async Task<bool> VerifyOTP(int userId, string otp)
+        public async Task<bool> VerifyOTP(string loginType, string LoginId, string otp)
         {
             try
             {
-                string query = "SELECT Id FROM UserOTP WHERE UserId = @UserId AND OTP = @OTP AND Expiry > GETUTCDATE() AND IsUsed = 0";
+                string query = "SELECT Id FROM core.loginOTP WHERE LoginId = @LoginId AND LoginType = @LoginType AND OTP = @OTP AND ExpiryTime > GETUTCDATE() AND IsUsed = 0";
                 var parameters = new[] {
-                        new SqlParameter("@UserId", userId),
+                    new SqlParameter("@LoginType", loginType),
+                        new SqlParameter("@LoginId", LoginId),
                         new SqlParameter("@OTP", otp),
                 };
 
-                object result = _sqlHelper.ExecuteQuery(query, parameters);
+                DataTable result = _sqlHelper.ExecuteQuery(query, parameters);
 
                 if (result != null)
                 {
+                    if (result.Rows.Count == 0) return false; 
                     // Mark OTP as used
-                    string updateQuery = "UPDATE UserOTP SET IsUsed = 1 WHERE Id = @Id";
+                    string updateQuery = "UPDATE core.loginOTP SET IsUsed = 1 WHERE Id = @Id";
 
                     parameters = new[] {
-                        new SqlParameter("@Id", result)
+                        new SqlParameter("@Id", result.Rows[0]["Id"])
                     };
-                    await _sqlHelper.ExecuteNonQueryAsync(query, parameters);
+                    await _sqlHelper.ExecuteNonQueryAsync(updateQuery, parameters);
 
                     return true;
                 }
@@ -137,7 +144,19 @@ namespace Repository.Core
             }
         }
 
-
+        public async Task<int?> GetMaxofUserId()
+        {
+            try
+            {
+                string query = "SELECT count(1) FROM core.userM";
+                DataTable result = await _sqlHelper.ExecuteQueryAsync(query);
+                return result == null ? (int?)null : Convert.ToInt32(result.Rows[0][0]);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         private static User MapDataRowToUser(DataRow row)
         {
             return new User

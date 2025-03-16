@@ -118,7 +118,7 @@
     "ContainingType": "encryptzERP.Controllers.Core.LoginController",
     "Method": "Logout",
     "RelativePath": "api/Login",
-    "HttpMethod": "PUT",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -141,6 +141,38 @@
       {
         "Name": "request",
         "Type": "BusinessLogic.Core.DTOs.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "encryptzERP.Controllers.Core.LoginController",
+    "Method": "SendOTP",
+    "RelativePath": "api/Login/send-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessLogic.Core.DTOs.SendOtpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "encryptzERP.Controllers.Core.LoginController",
+    "Method": "VerifyOTP",
+    "RelativePath": "api/Login/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BusinessLogic.Core.DTOs.VerifyOtpRequest",
         "IsRequired": true
       }
     ],

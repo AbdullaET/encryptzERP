@@ -26,15 +26,19 @@ namespace BusinessLogic.Core.DTOs
 
     public class SendOtpRequest
     {
-        public string Email { get; set; } = string.Empty;
-        public string phoneNo { get; set; } = string.Empty;
+        public string loginType { get; set; } = string.Empty;
+        public string loginId { get; set; } = string.Empty;
+        public string fullName { get; set; } = string.Empty;
         public string panNo { get; set; }= string.Empty;
     }
 
     public class VerifyOtpRequest
     {
-        public int UserId { get; set; }
-        public string OTP { get; set; } = string.Empty;
+        public string loginType { get; set; } = string.Empty;
+        public string loginId { get; set; } = string.Empty;
+        public string fullName { get; set; } = string.Empty;
+        public string panNo { get; set; } = string.Empty;
+        public string otp { get; set; } = string.Empty;
     }
 
 

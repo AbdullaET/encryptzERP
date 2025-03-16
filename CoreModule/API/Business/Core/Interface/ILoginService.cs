@@ -12,8 +12,8 @@ namespace BusinessLogic.Core.Interface
         Task<LoginResponse> LoginAsync(LoginRequest loginRequest);
         Task<bool> LogoutAsync(string userId);
         Task<LoginResponse> RefreshTokenAsync(RefreshTokenRequest refreshTokenRequest);
-        Task<bool> SaveOTP(int userId, string otp);
-        Task<bool> VerifyOTP(int userId, string otp);
+        Task<(bool, string)> SendOTP(SendOtpRequest sendOtpRequest);
+        Task<LoginResponse> VerifyOTP(VerifyOtpRequest verifyOtpRequest);
         Task<bool> ChangePassword(int userId, string newPassword);
         Task<int?> GetUserIdByEmail(string email);
     }

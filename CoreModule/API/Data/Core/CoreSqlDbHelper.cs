@@ -33,6 +33,25 @@ namespace Data.Core
             }
         }
 
+        public async Task<DataTable> ExecuteQueryAsync(string query, SqlParameter[] parameters = null)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            using (var command = new SqlCommand(query, connection))
+            {
+                command.CommandType = CommandType.Text;
+                if (parameters != null)
+                    command.Parameters.AddRange(parameters);
+
+                var dataTable = new DataTable();
+                using (var adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                await Task.CompletedTask;
+                return dataTable;
+            }
+        }
+
         public int ExecuteNonQuery(string query, SqlParameter[] parameters = null)
         {
             using (var connection = new SqlConnection(_connectionString))

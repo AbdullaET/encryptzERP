@@ -22,7 +22,7 @@ namespace BusinessLogic.Admin.Services
         _userRepository = userRepository;
         }
 
-        public async Task<bool> AddUserAsync(UserDto userDto)
+        public async Task<UserDto> AddUserAsync(UserDto userDto)
         {
             try
             {
@@ -32,14 +32,15 @@ namespace BusinessLogic.Admin.Services
                 if (userDto.userId.Length > 50)
                     throw new ArgumentException("userId cannot exceed 50 characters.");
 
-                var user = userDto.ToClassObject<UserDto,User>(); 
+                var user = userDto.ConvertToClassObject<UserDto,User>(); 
 
-                await _userRepository.AddAsync(user);
-                return true;
+               user= await _userRepository.AddAsync(user);
+                if (user == null)
+                    throw new Exception("Failed to add user.");
+                return user.ConvertToClassObject<User,UserDto>();
             }
             catch (Exception)
             {
-
                 throw;
             }
            
@@ -70,7 +71,7 @@ namespace BusinessLogic.Admin.Services
 
                 foreach (var user in users)
                 {
-                    userDtos.Add(user.ToClassObject<User,UserDto>());
+                    userDtos.Add(user.ConvertToClassObject<User,UserDto>());
                 }
 
                 return userDtos;
@@ -88,7 +89,7 @@ namespace BusinessLogic.Admin.Services
             try
             {
                 var user = await _userRepository.GetByIdAsync(id);
-                return user?.ToClassObject<User, UserDto>();
+                return user?.ConvertToClassObject<User, UserDto>();
             }
             catch (Exception)
             {
@@ -104,7 +105,7 @@ namespace BusinessLogic.Admin.Services
             {
                 if (id <=0)
                     throw new ArgumentException("Invalid User ID.");
-                var userObj=user.ToClassObject<UserDto,User>();
+                var userObj=user.ConvertToClassObject<UserDto,User>();
                 await _userRepository.UpdateAsync(userObj);
                 return true;
             }

@@ -13,14 +13,12 @@ namespace encryptzERP.Controllers.Core
     public class LoginController : ControllerBase
     {
         private readonly ILoginService _loginService;
-        private readonly ExceptionHandler _exceptionHandler;
-        private readonly EmailService _emailService;
+        private readonly ExceptionHandler _exceptionHandler;        
 
-        public LoginController(ILoginService loginService, ExceptionHandler exceptionHandler, EmailService emailService)
+        public LoginController(ILoginService loginService, ExceptionHandler exceptionHandler)
         {
             _loginService = loginService;
-            _exceptionHandler = exceptionHandler;
-            _emailService = emailService;
+            _exceptionHandler = exceptionHandler;            
         }
 
         [HttpPost]
@@ -40,7 +38,7 @@ namespace encryptzERP.Controllers.Core
             }
         }
 
-        [HttpPut]
+        [HttpDelete]
         public async Task<ActionResult> Logout(string userId)
         {
             try
@@ -76,58 +74,46 @@ namespace encryptzERP.Controllers.Core
                 throw;
             }
 
-
         }
 
-        //[HttpPost("send-otp")]
-        //public async Task<IActionResult> SendOTP([FromBody] SendOtpRequest request)
-        //{
-        //    var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
-        //    if (user == null)
-        //        return BadRequest("User not found");
+        [HttpPost("send-otp")]
+        public async Task<IActionResult> SendOTP([FromBody] SendOtpRequest request)
+        {
+            try
+            {
+                var response= await _loginService.SendOTP(request);
+                if (!response.Item1)
+                {
+                    return BadRequest(new { status = true, Message = "OTP sent successfully" });
+                }
+                return Ok(new { status = true, Message = "OTP sent successfully" });
+            }
+            catch (Exception ex)
+            {
+                _exceptionHandler.LogError(ex);
+                throw;
+            }
+        }
 
-        //    // Generate 6-digit OTP
-        //    var otp = new Random().Next(100000, 999999).ToString();
-        //    var expiry = DateTime.UtcNow.AddMinutes(5);
-
-        //    // Save OTP in DB
-        //    var userOtp = new UserOTP
-        //    {
-        //        UserId = user.Id,
-        //        OTP = otp,
-        //        Expiry = expiry,
-        //        IsUsed = false
-        //    };
-
-        //    _context.UserOTP.Add(userOtp);
-        //    await _context.SaveChangesAsync();
-
-        //    // Send OTP via Email (or SMS)
-        //    await SendEmail(user.Email, otp);
-
-        //    return Ok(new { Message = "OTP sent successfully" });
-        //}
-
-        //[HttpPost("verify-otp")]
-        //public async Task<IActionResult> VerifyOTP([FromBody] VerifyOtpRequest request)
-        //{
-        //    var otpRecord = await _context.UserOTP
-        //        .Where(o => o.UserId == request.UserId && o.OTP == request.OTP && o.IsUsed == false)
-        //        .OrderByDescending(o => o.CreatedAt)
-        //        .FirstOrDefaultAsync();
-
-        //    if (otpRecord == null || otpRecord.Expiry < DateTime.UtcNow)
-        //        return BadRequest("Invalid or expired OTP");
-
-        //    // Mark OTP as used
-        //    otpRecord.IsUsed = true;
-        //    await _context.SaveChangesAsync();
-
-        //    // Generate JWT Token
-        //    var token = GenerateJwtToken(request.UserId);
-
-        //    return Ok(new { Token = token, Message = "Login successful" });
-        //}
+        [HttpPost("verify-otp")]
+        public async Task<IActionResult> VerifyOTP([FromBody] VerifyOtpRequest request)
+        {
+            try
+            {
+                LoginResponse loginResponse = new LoginResponse();
+                var response = await _loginService.VerifyOTP(request);
+                if (response == null)
+                {
+                    return BadRequest(new { status = false, Message = "OTP sent successfully" });
+                }
+                return Ok(new { status = true, response = response, Message = "OTP sent successfully" });
+            }
+            catch (Exception ex)
+            {
+                _exceptionHandler.LogError(ex);
+                throw;
+            }
+        }
 
 
     }

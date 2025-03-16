@@ -24,7 +24,7 @@ namespace BusinessLogic.Core.Services
         {
             try
             {
-                await _companyRepository.AddAsync(Company.ToClassObject<CompanyDto, Company>());
+                await _companyRepository.AddAsync(Company.ConvertToClassObject<CompanyDto, Company>());
                 return true;
             }
             catch (Exception)
@@ -57,7 +57,7 @@ namespace BusinessLogic.Core.Services
                 foreach (var company in companies)
                 {
                     var companyDto = new CompanyDto();
-                    companyDto = company.ToClassObject<Company, CompanyDto>();
+                    companyDto = company.ConvertToClassObject<Company, CompanyDto>();
                     companyDtoList.Add(companyDto);
                 }
                 return companyDtoList;
@@ -77,7 +77,7 @@ namespace BusinessLogic.Core.Services
                 var company = await _companyRepository.GetByIdAsync(id);
 
                 var companyDto = new CompanyDto();
-                companyDto=company.ToClassObject<Company, CompanyDto>();
+                companyDto=company.ConvertToClassObject<Company, CompanyDto>();
 
                 return companyDto;
             }
@@ -92,7 +92,7 @@ namespace BusinessLogic.Core.Services
         {
             try
             {
-                await _companyRepository.UpdateAsync(Company.ToClassObject<CompanyDto, Company>());
+                await _companyRepository.UpdateAsync(Company.ConvertToClassObject<CompanyDto, Company>());
 
                 return true;
             }

@@ -15,12 +15,12 @@ public class TokenService
         _config = config;
     }
 
-    public string GenerateAccessToken(string username, string role)
+    public string GenerateAccessToken(string userId, string role)
     {
         var key = Encoding.UTF8.GetBytes(_config["JwtSettings:SecretKey"]);
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, username),
+            new Claim(ClaimTypes.Name, userId),
             new Claim(ClaimTypes.Role, role)
         };
 

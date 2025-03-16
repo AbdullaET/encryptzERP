@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
 
 namespace Infrastructure.Extensions
 {
     public static class extension
     {
         // Generic method to convert one object to another
-        public static TTarget ToClassObject<TSource, TTarget>(this TSource source)
+        public static TTarget ConvertToClassObject<TSource, TTarget>(this TSource source)
             where TSource : class
             where TTarget : class, new()
         {
@@ -104,6 +107,67 @@ namespace Infrastructure.Extensions
 
             string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, emailPattern, RegexOptions.IgnoreCase);
+        }
+
+        /// Converts a DataRow to an object of a specified class.
+        public static T ToObjectFromDR<T>(this DataRow row) where T : new()
+        {
+            if (row == null)
+                throw new ArgumentNullException(nameof(row));
+
+            T obj = new T();
+            var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (var prop in properties)
+            {
+                if (row.Table.Columns.Contains(prop.Name) && row[prop.Name] != DBNull.Value)
+                {
+                    try
+                    {
+                        prop.SetValue(obj, Convert.ChangeType(row[prop.Name], prop.PropertyType));
+                    }
+                    catch
+                    {
+                        throw;
+                        // Handle type conversion errors if needed
+                    }
+                }
+            }
+
+            return obj;
+        }
+
+        /// Converts a DataTable to a list of objects of a specified class.
+        public static List<T> ToList<T>(this DataTable table) where T : new()
+        {
+            List<T> list = new List<T>();
+            if (table == null || table.Rows.Count == 0)
+                return list;
+
+            // Get all properties of the target class
+            var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (DataRow row in table.Rows)
+            {
+                T obj = new T();
+                foreach (var prop in properties)
+                {
+                    if (table.Columns.Contains(prop.Name) && row[prop.Name] != DBNull.Value)
+                    {
+                        try
+                        {
+                            prop.SetValue(obj, Convert.ChangeType(row[prop.Name], prop.PropertyType));
+                        }
+                        catch
+                        {
+                            throw;
+                            // Handle type conversion errors if needed
+                        }
+                    }
+                }
+                list.Add(obj);
+            }
+            return list;
         }
     }
 
