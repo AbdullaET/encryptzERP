@@ -10,16 +10,16 @@ namespace Entities.Admin
     {
 
         public long id { get; set; }
-        public string userId { get; set; }
-        public string userName { get; set; }
-        public string? userPassword { get; set; }
-        public string? panNo { get; set; }
-        public string? adharCardNo { get; set; }
-        public string? phoneNo { get; set; }
-        public string? address { get; set; }
-        public int? stateId { get; set; }
-        public int? nationId { get; set; }
-        public bool isActive { get; set; }
+        public string userId { get; set; } = string.Empty;
+        public string userName { get; set; } = string.Empty;
+        public string? userPassword { get; set; } = string.Empty;
+        public string? panNo { get; set; } = string.Empty;
+        public string? adharCardNo { get; set; } = string.Empty;
+        public string? phoneNo { get; set; } = string.Empty;
+        public string? address { get; set; } = string.Empty;
+        public int? stateId { get; set; } = 0;
+        public int? nationId { get; set; }= 0;
+        public bool isActive { get; set; } = true;
 
     }
 }

@@ -45,7 +45,7 @@ public class EmailService
 
 
         using var smtp = new SmtpClient();
-        await smtp.ConnectAsync(smtpSettings["SmtpServer"], int.Parse(smtpSettings["Port"]??"587"), SecureSocketOptions.StartTls);
+        await smtp.ConnectAsync(smtpSettings["SmtpServer"], int.Parse(smtpSettings["Port"]??"465"), bool.Parse(smtpSettings["EnableSSL"] ??"true"));
         await smtp.AuthenticateAsync(smtpSettings["SenderEmail"], smtpSettings["SenderPassword"]);
         await smtp.SendAsync(email);
         await smtp.DisconnectAsync(true);
